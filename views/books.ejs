@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Books</h1>
+        <% if(books.length > 0) {%>
+            <h3>Books are present</h3>
+            <% for(let book of books) {%>
+                <h4>Book title: <%= book.title %></h4>
+                <h4>Book Price: <%= book.price %></h4>
+                <h4>Book Publisher: <%= book.publisher %></h4>
+                <br>
+          <%}%>
+        <%}%>
+    </div>
+</body>
+</html>
